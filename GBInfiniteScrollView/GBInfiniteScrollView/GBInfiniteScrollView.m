@@ -569,8 +569,6 @@ static CGFloat const GBAutoScrollDefaultInterval = 3.0f;
     if (pan.state == UIGestureRecognizerStateBegan) {
         [self cancelAnimation];
         [self stopAutoScroll];
-    }else if (pan.state == UIGestureRecognizerStateEnded){
-        [self startAutoScroll];
     }
     
     if (self.infiniteScrollViewDelegate &&
